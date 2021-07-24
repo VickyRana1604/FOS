@@ -50,6 +50,7 @@ public class Restraurant {
         return order;
     }
     public void completeOrder(Order order){
+        current_orderr_count--;
         order.state = OrderState.COMPLETED;
         liveOrders.remove(order);
     }
